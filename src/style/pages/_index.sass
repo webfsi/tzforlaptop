@@ -1,5 +1,228 @@
 /* ----- Index page -------------------- */
+.section-st_dark
+  background-color: #233148
+  color: #fff
+  .title-site, h1, h2, h3, h4, h5, h6
+    color: inherit
+    
+.skills-point
+  p
+    color: #8796AE
+    letter-spacing: 0.32px
 
+.skills-bg
+  position: absolute
+  top: 143px
+  left: 50%
+  margin-left: -293px
+  z-index: -1
+  img
+    max-width: none
+
+.section-st_skills
+  position: relative
+  z-index: 1
+  overflow: hidden
+
+.skills-point__icon
+  max-width: 35px
+  margin-bottom: 30px
+
+.cap-section
+  margin-bottom: 58px
+
+.skills-point
+  margin-bottom: 50px
+
+.skills-point__tt
+  margin-bottom: 35px
+
+.section-preview
+  position: relative
+  z-index: 2
+
+.section-preview__bg
+  position: absolute
+  top: 0
+  left: 0
+  right: 0
+  bottom: 27px
+  background: #1F65D9
+  overflow: hidden
+  display: flex
+  justify-content: flex-end
+  flex-direction: column
+  z-index: -1
+  picture
+    display: block
+    opacity: 0.1
+    margin-bottom: -19px
+
+.pr-box__img
+  position: absolute
+  top: -40px
+  right: -30px
+  z-index: -1
+
+.pr-box
+  position: relative
+  z-index: 1
+  padding-top: 195px
+  min-height: 250px
+  color: #fff
+  .title-site, h1, h2, h3, h4, h5, h6
+    color: inherit
+    
+
+.pr-box-grid
+  max-width: 220px
+  p
+    max-width: 190px
+    margin-bottom: 38px
+
+  .title-site, h1, h2, h3, h4, h5, h6
+    margin-bottom: 48px
+
+.cap-section__chevron
+  margin-bottom: 12px
+  max-width: 19px
+  svg
+    max-width: 100%
+  
+
+
+/* Min width 480 pixels */
+@media only screen and (min-width: 480px)
+  .grid
+    display: flex
+    flex-wrap: wrap
+    margin-left: -15px
+    margin-right: -15px
+    &__half-col
+      flex: 0 1 50%
+      padding-left: 15px
+      padding-right: 15px
+
+  .skills-bg
+    top: 50%
+    margin-top: -341px 
+/* end media min width 480 pixels */
+
+/* Min width 768 pixels */
+@media only screen and (min-width: 768px)
+  .skills-point
+    margin-bottom: 70px
+
+  .cap-section
+    margin-bottom: 80px
+
+  .section-preview__bg
+    picture
+      margin-bottom: -45px
+
+  .section-preview__bg
+    bottom: 37px
+
+  .pr-box
+    max-width: 60%
+    padding-top: 70px
+
+  .pr-box__img
+    right: auto
+    left: 100%
+    margin-left: -210px
+    top: -70px
+    img
+      max-width: none
+
+  .pr-box-grid p
+    max-width: none
+  .pr-box-grid
+    max-width: 320px
+  .section-preview__bg
+    padding-left: 30px
+
+  .cap-section__chevron
+    margin-bottom: 10px
+
+  .skills-point__icon
+    max-width: none
+      
+/* end media min width 768 pixels */
+
+/* Min width 1000 pixels */
+@media only screen and (min-width: 1000px)
+  .grid
+    margin-left: 0
+    margin-right: 0
+    &__half-col
+      padding-left: 100px
+      padding-right: 45px
+
+  .pr-box-grid
+    max-width: none
+    margin-bottom: 20px
+    display: flex
+    justify-content: space-between
+    
+  .pr-box-grid p
+    max-width: none
+    padding-right: 50px
+    font-size: 24px
+    line-height: 34px
+    
+  .pr-box-grid__right
+    max-width: 50%
+    padding-top: 40px
+  .pr-box-grid__left
+    max-width: 50%
+    padding-right: 30px
+  .pr-box__img
+    margin-left: -160px
+
+  .cap-section
+    margin-bottom: 122px
+    
+  .skills-point__icon
+    margin-bottom: 26px
+
+  .skills-point__tt
+    margin-bottom: 48px
+
+  .skills-point
+    margin-bottom: 100px
+
+/* end media min width 1000 pixels */
+    
+/* Min width 1200 pixels */
+@media only screen and (min-width: 1200px)
+  .section-preview__bg
+    padding-left: calc(50vw - 585px)
+  .section-preview__bg
+    right: calc(50vw - 585px)
+  .pr-box
+    max-width: 50%
+  .pr-box__img
+    margin-left: -74px
+    top: -73px
+  .section-preview
+    &:before
+      content: ""
+      position: absolute
+      top: 0
+      right: 0
+      left: 0
+      height: 110px
+      z-index: -1
+      background-color: #233148
+
+  .pr-box-grid p
+    padding-right: 60px
+
+  .skills-bg
+    margin-top: -427px
+
+/* end media min width 1200 pixels */
 
 /* ----- END index page /--------------- */
 /*                                       */

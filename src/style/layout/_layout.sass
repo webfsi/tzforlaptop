@@ -11,17 +11,21 @@
 
 #wrapper
   min-width: 320px
+  overflow: hidden
 
 .section-st
-  padding: 20px 0
+  padding: 90px 0 40px
 
 .container
-  padding-left: 15px
-  padding-right: 15px
+  padding-left: 30px
+  padding-right: 30px
   width: auto
 
 .visible-lap, .hidden-full, .hidden-mobile
   display: none
+
+.section-st_min-height
+  min-height: 724px
 
 
 /* Min width 768 pixels */
@@ -31,6 +35,9 @@
     
   .hidden-tabl
     display: block
+
+  .section-st
+    padding: 100px 0 100px
   /* end media min width 768 pixels */
 
 
@@ -50,31 +57,29 @@
     flex-shrink: 0
 
   .section-st
-    padding: 50px 0
-
-  .container
-    max-width: 980px
-    padding-left: 10px
-    padding-right: 10px
-    margin: 0 auto
+    padding: 132px 0 92px
 
   .visible-lap
     display: block
 
   .hidden-lap
     display: none
+
+  .section-st_min-height
+    min-height: 762px
   /* end media min width 1000 pixels */
 
 
-/* Min width 1220 pixels */
-@media only screen and (min-width: 1220px)
-  .section-st_lg
-    padding: 80px 0
+/* Min width 1200 pixels */
+@media only screen and (min-width: 1200px)
   .hidden-lap
     display: block
   .container
-    max-width: 1170px
-  /* end media min width 1220 pixels */
+    max-width: 1200px
+    margin: 0 auto
+    padding-left: 15px
+    padding-right: 15px
+  /* end media min width 1200 pixels */
 
 
 

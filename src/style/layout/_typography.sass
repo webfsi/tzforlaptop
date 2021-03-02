@@ -11,6 +11,8 @@ body
   background-color: $site-fill-color
   font: $site-font-style $site-font-weight $body-text-size $site-font-family
   color: $site-text-color
+  
+  letter-spacing: 0.32px
 
 .title-site, h1, h2, h3, h4, h5, h6
   display: block
@@ -24,13 +26,21 @@ body
 h1, .title-site_h1
   font-size: $site-h1-size-mobile
   margin-bottom: 20px
+  letter-spacing: 0.9px
+  font-weight: 900
+  line-height: 37px
 
 h2, .title-site_h2
   font-size: $site-h2-size-mobile
   margin-bottom: 20px
+  letter-spacing: 0.64px
+  font-weight: 800
+  line-height: 27px
 
 h3, .title-site_h3
   font-size: $site-h3-size-mobile
+  letter-spacing: 0.44px
+  line-height: 27px
 
 h4, .title-site_h4
   font-size: $site-h4-size-mobile
@@ -106,12 +116,17 @@ a
 @media only screen and (min-width: 768px)
   h1, .title-site_h1
     font-size: $site-h1-size
+    line-height: 50px
 
   h2, .title-site_h2
     font-size: $site-h2-size
+    line-height: 39px
+    letter-spacing: 0.64px
 
   h3, .title-site_h3
     font-size: $site-h3-size
+    line-height: 39px
+    letter-spacing: 0.64px
 
   h4, .title-site_h4
     font-size: $site-h4-size
@@ -128,7 +143,20 @@ a
 
     &__half-col
       width: 48%
+
+  body
+    font-size: 18px
+    line-height: 28px
+    letter-spacing: 0.36px
   /* end media min width 768 pixels */
+
+/* Min width 1000 pixels */
+@media only screen and (min-width: 1000px)
+  h1, .title-site_h1
+    font-size: 48px
+    line-height: 58px
+    letter-spacing: 1.44px
+/* end media min width 1000 pixels */
 
 /* ----- END Typography ---------------- */
 /*                                       */
