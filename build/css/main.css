@@ -2210,6 +2210,9 @@ body[data-aos-easing="ease-in-out-quart"] [data-aos], [data-aos][data-aos][data-
   .skills-point__icon {
     max-width: none;
   }
+  .cap-section__chevron {
+    max-width: none;
+  }
 }
 
 /* end media min width 768 pixels */
